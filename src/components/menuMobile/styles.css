@@ -1,4 +1,4 @@
-.menu-mobile {
+.open-menu-mobile {
   position: fixed;
   top: 0px;
   left: 0;
@@ -9,16 +9,22 @@
   justify-content: center;
   text-align: center;
   background-color: #00000099;
+ 
 }
 
-.mobile ul {
+.Menu-mobile ul {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.mobile ul li a{
+.Menu-mobile ul li a{
  font-size: 25px;
  color: #ffffff;
 }
 
+.close-menu-mobile{
+  display: none;
+  height: 0;
+
+}

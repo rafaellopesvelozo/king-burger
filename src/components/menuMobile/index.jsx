@@ -1,12 +1,9 @@
 import "./styles.css"
 
-const Mobile = ({ open, setm }) => {
-    if (!open || !setm) {
-        return null
-    }
+const Mobile = ({ open }) => {
     return (
-        <div className="menu-mobile">
-            <div className="mobile">
+        <div className={open ? "open-menu-mobile" : "close-menu-mobile"}>
+            <div className="Menu-mobile">
                 <ul>
                     <li><a href="#scrollHome">Home</a></li>
                     <li><a href="#scrollPromotion">Promoção</a></li>
@@ -15,7 +12,6 @@ const Mobile = ({ open, setm }) => {
                     <li><a href="#scrollContact">Contato</a></li>
                 </ul>
             </div>
-           
         </div>
     );
 }

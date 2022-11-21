@@ -11,16 +11,14 @@ import './styles.css'
 
 const Header = () => {
     const [isModalVisible, setIsModalVisible] = useState(false)
-    const [m,setM] = useState(true)
 
-    function handleOpenModal() {
-      setIsModalVisible(true)
-      setM(!m)
+    const handleOpenModal = () => {
+        setIsModalVisible(!isModalVisible)
     }
 
     return (
         <div className='Header'>
-            <Mobile open={isModalVisible ? true: false} setm={m} />
+            <Mobile open={isModalVisible ? true : false} />
 
             <div className='nav'>
                 <div className="Logo">
@@ -32,7 +30,7 @@ const Header = () => {
                 <div className="Contacts">
                     <Contact />
                 </div>
-                <FcMenu className="icon-menu" size={35} onClick={() => handleOpenModal()} />
+                <FcMenu className="icon-menu" size={35} onClick={handleOpenModal} />
             </div>
         </div>
     );
