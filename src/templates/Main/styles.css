@@ -1,0 +1,234 @@
+.bg-img-hero {
+  padding-left: 13%;
+  background-image: url(../../assets/banner-hero.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  height: 545px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-king-burguer p:nth-child(1) {
+  font-size: clamp(1.1rem, 1.52vw, 1.375rem);
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  color: #1d0605e5;
+}
+
+.Main .bg-img-hero .info-king-burguer h1 {
+  font-weight: 400;
+  font-family: "Lilita One", cursive;
+  font-size: clamp(2.4rem, 5.34vw, 3.313rem);
+  color: #3b200b;
+}
+
+.Main .bg-img-hero .info-king-burguer h1 span {
+  color: #f59a1b;
+}
+
+.info-king-burguer p:nth-child(3) {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: clamp(0.95rem, 1.52vw, 1.375rem);
+  color: rgba(29, 6, 5, 0.69);
+}
+
+.info-king-burguer p:nth-child(3) span {
+  font-weight: 900;
+  background-color: #f59a1b;
+  padding: 0 5px;
+  border-radius: 0.2rem;
+}
+
+.Main .bg-img-hero .btn-king-gurguer button {
+  margin-top: 10px;
+  background-color: #f43127;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-size: clamp(1rem, 1.52vw, 1.375);
+  color: #ffff;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.Main .personalized-service {
+  padding: 0 0 0 10%;
+  background-color: #faf3f2;
+}
+
+.Main .personalized-service .service {
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.Main .personalized-service .service .information {
+  margin-top: 90px;
+}
+
+.Main .personalized-service .service .information p:nth-child(1) {
+  font-size: clamp(1.1rem, 2.77vw, 2.5rem);
+  font-weight: 400;
+  color: #1d0605;
+  font-family: "Lilita One", cursive;
+}
+
+.Main .personalized-service .service .information p span {
+  background-color: #f59a1b;
+  padding: 1px 5px;
+  border-radius: 8px;
+}
+
+.Main .personalized-service .service .information p:nth-child(2) {
+  font-size: clamp(0.9rem, 1.38vw, 1.25rem);
+  font-weight: 400;
+  color: rgba(29, 6, 5, 0.69);
+  font-family: "Lato", sans-serif;
+  margin-top: 10px;
+}
+
+.Main .personalized-service .service .information .btn-menu button {
+  font-size: clamp(0.9rem, 1.59vw, 1.438rem);
+  font-weight: 700;
+  background-color: #f43427;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 10px 21px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.personalized-service #row hr {
+  width: 80%;
+  border: 1px solid rgba(29, 6, 5, 0.15);
+  margin: 100px 0;
+}
+
+.Main .publications-social-media {
+  background-color: #faf3f2;
+  padding-top: 80px;
+}
+
+.Main .publications-social-media .publications-images {
+  display: flex;
+  flex-direction: row;
+}
+
+.Main .publications-social-media .publications-images img {
+  overflow: hidden;
+  width: 270px;
+  height: 160px;
+}
+
+.Main .publications-social-media .title-publication {
+  text-align: center;
+}
+
+.Main .publications-social-media .title-publication p:nth-child(1) {
+  font-size: clamp(1.4rem, 2.22vw, 2rem);
+  font-weight: 400;
+  color: #1d0605e5;
+  font-family: "Lilita One", cursive;
+}
+
+.Main .publications-social-media .title-publication p:nth-child(2) {
+  font-size: clamp(0.9rem, 1.11vw, 1rem);
+  font-weight: 400;
+  color: #1d0605b0;
+  font-family: "Lilita One", cursive;
+  padding-bottom: 10px;
+}
+
+.Main .publications-social-media .empireBurger {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  background-color: #f59a1b;
+  height: 50px;
+}
+
+.Main .publications-social-media .empireBurger p {
+  overflow: hidden;
+  font-size: 27px;
+  font-weight: 400;
+  color: #1d0605e5;
+  font-family: "Lilita One", cursive;
+}
+
+.Main .our-deliveries {
+  padding: 0 0 0 10%;
+  background-color: #faf3f2;
+}
+
+.Main .localization {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #faf3f2;
+}
+
+.Main .localization .localization-title {
+  text-align: center;
+  padding: 70px 10% 20px 10%;
+}
+.Main .localization .localization-title p:nth-child(1) {
+  font-size: clamp(1.3rem, 2.22vw, 2rem);
+  color: #1d0605;
+  font-family: "Lilita One", cursive;
+}
+.Main .localization .localization-title p:nth-child(2) {
+  font-size: clamp(0.8rem, 1.11vw, 1rem);
+  color: #1d0605b0;
+  font-family: "Lato", sans-serif;
+}
+.Main .localization .map {
+  height: 205px;
+}
+.Main .localization .map iframe {
+  height: 205px;
+  width: 100%;
+  border: none;
+}
+
+@media (max-width: 1231px) {
+  .Main .our-deliveries {
+    padding: 0 5% 0 10%;
+    background-color: #faf3f2;
+  }
+}
+
+@media (max-width: 1176px) {
+  .Main .our-deliveries {
+    padding: 0 5% 0 6%;
+  }
+  .Main .personalized-service {
+    padding: 0 5% 0 6%;
+  }
+  .Main .personalized-service .service .woman-eat img {
+    width: 450px;
+  }
+  .bg-img-hero {
+    padding-left: 6%;
+  }
+}
+
+@media (max-width: 906px) {
+  .Main .personalized-service .service .woman-eat img {
+    width: 370px;
+  }
+}
+
+@media (max-width: 740px) {
+  .Main .personalized-service .service .woman-eat img {
+    width: 300px;
+  }
+}

@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+<h1 align="center">
+  <img src=".github/logo.png" width="300px" />
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src=".github/preview.jpeg" width="100%" />
+</p>
 
-## Available Scripts
+## 💻 Projeto
 
-In the project directory, you can run:
+Esse projeto é uma landing page de uma hamburgueria fictícia chamada **Empire Burger**, nela há seções sobre as ofertas especiais, horário de funcionamento, cardápio contendo os ingredientes e preços, cards com os feedbacks dos clientes e a localização do estabelecimento.
 
-### `npm start`
+Para facilitar a codificação do projeto foi usado um protótipo do figma como base, o autor do layout é o design [**Tiago Alves**](https://www.behance.net/tiagofenixe9d9), [clique aqui](https://www.figma.com/file/ag4Az50adOF53pBrwI0wFg/Empire-Burger?node-id=0%3A1) para abrir o protótipo no figma.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Tecnologias
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Item 1](http://localhost:3000/)
+- [Item 2](http://localhost:3000/)
+- [Item 3](http://localhost:3000/)
 
-### `npm test`
+## 📝 Critérios de aceite
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [ ] Criar as seguintes seções: Menu, Banner hero, Ofertas especiais, Onde fica o nosso castelo, Footer.
 
-### `npm run build`
+- [ ] Ao clicar em um item do menu, o usuário deverá ser levado para a seção correspondente.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [ ] Na seção Ofertas especiais os elementos devem ser organizados com o uso da propriedade display:grid do css.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [ ] As informações do card da oferta(nome do prato e gramagem) devem estar no html, a única imagem deve ser a foto do prato com o preço.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [ ] Na seção Onde fica o nosso castelo você deverá incorporar uma localização do google maps.
 
-### `npm run eject`
+### Nível Médio
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [ ] Todos os requisitos do nivel fácil.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [ ] Criar as seguintes seções: Cardápio, Atendimento, Nossas entregas.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [ ] Na seção Cardápio os preços devem ser formatados com o método Intl.NumberFormat.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [ ] O card Horário de funcionamento deverá ter os estados aberto e fechado, o estado será alterado conforme o horário do navegador do usuário.
 
-## Learn More
+### Nível Difícil
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [ ] Todos os requisitos do nivel fácil e médio
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [ ] Criar as seguintes seções: Nossa realeza, Publicações do instagram.
 
-### Code Splitting
+- [ ] Buscar a lista de itens do cardápio via api.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [ ] Buscar a lista de depoimentos via api.
 
-### Analyzing the Bundle Size
+- [ ] Na seção Nossa realeza os depoimentos deverão estar em um carrousel funcional.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [ ] O texto de cada depoimento deverá estar limitado em quatro linhas, você pode usar a propriedade clamp do css.

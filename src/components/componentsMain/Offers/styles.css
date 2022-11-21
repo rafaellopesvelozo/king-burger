@@ -1,0 +1,121 @@
+.Offers {
+  padding: 70px 10%;
+  background-color: #faf3f2;
+}
+
+.Offers .title-offers {
+  margin: 50px 0 25px 0;
+}
+
+.Offers .title-offers p:nth-child(1) {
+  font-size: clamp(1rem, 1.75vw, 1.563rem);
+  color: #1d0605;
+  font-family: "Lilita One", cursive;
+  padding-bottom: 8px;
+}
+.Offers .title-offers p:nth-child(2) {
+  font-size: clamp(0.8rem, 1.04vw, 1rem);
+  color: rgba(29, 6, 5, 0.69);
+  font-family: "Lato", sans-serif;
+}
+
+.Offers .grid-offers {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 200px 200px;
+  row-gap: 15px;
+  column-gap: 15px;
+}
+
+.burger-imperial {
+  padding: 15px;
+  background-color: gray;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  border-radius: 10px;
+  background-image: url("../../../assets/ofertas/oferta-1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.potato {
+  padding: 15px;
+  background-color: cornflowerblue;
+  grid-column: 2/2;
+  grid-row: 1/2;
+  border-radius: 14px;
+  background-image: url("../../../assets/ofertas/oferta-2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.Ice-cream {
+  padding: 15px;
+  background-color: darkolivegreen;
+  grid-column: 2/2;
+  grid-row: 2/2;
+  border-radius: 14px;
+  background-image: url("../../../assets/ofertas/oferta-3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.burger-imperial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.burger-imperial #today p:nth-child(1) {
+  margin-right: 50px;
+}
+
+.Offers .grid-offers .burger-imperial #today {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.Offers .grid-offers .burger-imperial .offer-imperial {
+  font-size: 25px;
+  color: #ffff;
+  font-family: "Lilita One", cursive;
+}
+
+.Offers .grid-offers,
+.burger-imperial #price-offer-imperial {
+  font-size: 15px;
+  color: #ffffffb0;
+}
+
+.Offers .grid-offers #today {
+  text-align: right bottom;
+}
+
+.Offers .grid-offers .potatoAndIceCream {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1d0605;
+  font-family: "Lilita One", cursive;
+}
+
+.Offers .grid-offers #Weight {
+  font-size: 15px;
+  color: rgba(29, 6, 5, 0.69);
+}
+
+.Offers .grid-offers .burger-imperial #today p span {
+  font-size: 42px;
+  font-family: "Lilita One", cursive;
+  color: #ffffffe5;
+}
+@media (max-width: 1176px) {
+  .Offers {
+    padding: 70px 6%;
+  }
+}
+@media (max-width: 940px) {
+  .Offers {
+    padding: 110px 6% 70px 6%;
+  }
+
+}

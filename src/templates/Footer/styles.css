@@ -1,0 +1,60 @@
+.Footer {
+  height: 30px;
+  padding: 1% 13%;
+  align-items: center;
+}
+
+.Footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Footer div .scrool-footer section ul {
+  display: flex;
+  gap: 20px;
+}
+.Footer div .scrool-footer section ul li a {
+  color: #3a210b;
+  color: inherit;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 1.25vw, 1.125rem);
+}
+.Footer div .scrool-footer section ul li a:hover {
+  color: #32201f;
+  font-weight: 700;
+}
+.Footer div .social-media {
+  gap: 10px;
+}
+.Footer div .social-media img,
+.Footer div .Logo-footer img {
+  filter: brightness(0) saturate(100%) invert(74%) sepia(73%) saturate(2846%)
+    hue-rotate(348deg) brightness(100%) contrast(93%);
+}
+.Footer hr {
+  margin: 20px 0;
+  background-color: #1d060526;
+}
+
+.Footer .Copyright p span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #020e1fb0;
+  font-family: "Inter Tight", sans-serif;
+}
+
+.Footer .Copyright p {
+  margin: 0 auto;
+  font-size: 14px;
+  color: #020e1f4d;
+  font-weight: 700;
+  font-family: "Inter Tight", sans-serif;
+}
+
+@media (max-width: 1176px) {
+  .Footer {
+    padding: 0 6%;
+  }
+}

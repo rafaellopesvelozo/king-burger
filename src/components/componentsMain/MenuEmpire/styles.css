@@ -1,0 +1,115 @@
+.menu-empire {
+  display: flex;
+  scroll-margin-top: 150px;
+}
+
+.menu-empire .bg-empire {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 22%;
+  width: 50%;
+  background-image: url("../../../assets/banner-menu.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-empire .menu-list {
+  width: 50%;
+  padding: 30px 70px 30px 20px;
+  background-color: #3b200b;
+}
+
+.menu-empire .bg-empire p:nth-child(1) {
+  font-size: clamp(1.1rem, 1.73vw, 1.563rem);
+  color: #3b200b;
+  font-family: "Lilita One", cursive;
+  padding-bottom: 7px;
+}
+
+.menu-empire .bg-empire p:nth-child(2) {
+  font-size: clamp(0.8rem, 1.25vw, 1.125rem);
+  color: rgba(29, 6, 5, 0.69);
+  font-weight: 400;
+  padding-bottom: 7px;
+}
+
+.menu-empire .bg-empire p span {
+  background-color: #f59a1b;
+  padding: 0 5px;
+  border-radius: 0.2rem;
+}
+
+.menu-empire .btn-menu button {
+  background-color: #f43127;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-size: clamp(0.7rem, 1.04vw, 0.938rem);
+  color: #ffff;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.menu-empire .menu-list .tile-menu p {
+  font-size: clamp(1rem, 2.22vw, 2rem);
+  color: #f59a1b;
+  font-family: "Lilita One", cursive;
+}
+
+.menu-empire .items-menu {
+  margin-top: 10px;
+}
+
+.menu-empire .items-menu ul div .plate-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.menu-empire .items-menu ul div .plate-price span {
+  border: 1px dashed #fae4d0;
+  width: calc(55%);
+}
+
+.menu-empire .items-menu ul div .plate-price p {
+  font-size: clamp(0.9rem, 1.38vw, 1.25rem);
+  color: #fae4d0;
+  font-family: "Lilita One", cursive;
+  margin-top: 10px;
+}
+
+.menu-empire .items-menu ul div .ingredients p {
+  font-size: clamp(0.8rem, 1.11vw, 1rem);
+  color: #faf3f2;
+  font-family: "Lato", sans-serif;
+  margin-top: 10px;
+  padding-right: 50px;
+}
+.menu-empire .items-menu ul .loading-menu p {
+  text-align: center;
+  font-size: 20px;
+  color: #f59a1b;
+  font-family: "Lilita One", cursive;
+}
+
+@media (max-width: 1192px) {
+  .menu-empire .bg-empire {
+    padding-left: 20%;
+  }
+  .menu-empire .menu-list {
+    padding: 30px 25px 30px 20px;
+  }
+  .menu-empire .items-menu ul div .plate-price span {
+    width: calc(45%);
+  }
+}
+
+@media (max-width: 1043px) {
+  .menu-empire .bg-empire {
+    padding-left: 17%;
+  }
+}

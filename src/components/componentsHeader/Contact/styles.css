@@ -1,0 +1,38 @@
+.Contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Contact img {
+  cursor: pointer;
+}
+
+.contactWhatsapp {
+  margin-left: 0.4rem;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f59a1b;
+  padding: 0.3rem 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.contactWhatsapp p {
+  color: #34201f;
+  font-size: 16px;
+  width: 60px;
+}
+
+.contactWhatsapp img {
+  width: 21px;
+  height: 21px;
+}
+
+@media(max-width: 940px){
+  .Contact {
+    display: none;
+  }
+}
