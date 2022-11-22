@@ -31,6 +31,7 @@ const OpenHours = () => {
         if (day === 0 && hours >= 23) {
             setOpen(!open);
         }
+        // eslint-disable-next-line
     }, [])
 
 

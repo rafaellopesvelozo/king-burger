@@ -1,24 +1,22 @@
 .Offers {
-  padding: 70px 10%;
-  background-color: #faf3f2;
+  padding: 130px 10% 10% 10%;
+  background-color: #faf3f2; 
 }
-
 .Offers .title-offers {
   margin: 50px 0 25px 0;
+  scroll-margin-top: 110px;
 }
-
 .Offers .title-offers p:nth-child(1) {
-  font-size: clamp(1rem, 1.75vw, 1.563rem);
+  font-size: clamp(1.563rem, 2.22vw, 2rem);
   color: #1d0605;
   font-family: "Lilita One", cursive;
   padding-bottom: 8px;
 }
 .Offers .title-offers p:nth-child(2) {
-  font-size: clamp(0.8rem, 1.04vw, 1rem);
+  font-size: clamp(1rem, 1.04vw, 1rem);
   color: rgba(29, 6, 5, 0.69);
   font-family: "Lato", sans-serif;
 }
-
 .Offers .grid-offers {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -26,7 +24,6 @@
   row-gap: 15px;
   column-gap: 15px;
 }
-
 .burger-imperial {
   padding: 15px;
   background-color: gray;
@@ -37,7 +34,6 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
 .potato {
   padding: 15px;
   background-color: cornflowerblue;
@@ -48,7 +44,6 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
 .Ice-cream {
   padding: 15px;
   background-color: darkolivegreen;
@@ -59,7 +54,6 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
 .burger-imperial {
   display: flex;
   flex-direction: column;
@@ -68,54 +62,60 @@
 .burger-imperial #today p:nth-child(1) {
   margin-right: 50px;
 }
-
 .Offers .grid-offers .burger-imperial #today {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-
 .Offers .grid-offers .burger-imperial .offer-imperial {
-  font-size: 25px;
+  font-size: clamp(1.25rem, 1.73vw, 1.563rem);
   color: #ffff;
   font-family: "Lilita One", cursive;
 }
-
 .Offers .grid-offers,
 .burger-imperial #price-offer-imperial {
-  font-size: 15px;
+  font-size: 18px;
   color: #ffffffb0;
 }
-
 .Offers .grid-offers #today {
   text-align: right bottom;
 }
-
 .Offers .grid-offers .potatoAndIceCream {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   color: #1d0605;
   font-family: "Lilita One", cursive;
 }
-
 .Offers .grid-offers #Weight {
   font-size: 15px;
   color: rgba(29, 6, 5, 0.69);
 }
-
 .Offers .grid-offers .burger-imperial #today p span {
-  font-size: 42px;
+  font-size: clamp(1.125rem, 2.91vw, 2.625rem);
   font-family: "Lilita One", cursive;
   color: #ffffffe5;
 }
-@media (max-width: 1176px) {
-  .Offers {
-    padding: 70px 6%;
-  }
-}
-@media (max-width: 940px) {
-  .Offers {
-    padding: 110px 6% 70px 6%;
-  }
 
+@media (max-width: 428px) {
+  .Offers .grid-offers {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,211px);
+    row-gap: 15px;
+  }
+  .burger-imperial {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .potato {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .Ice-cream {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .Offers .title-offers {
+    scroll-margin-top: 70px;
+  }
 }

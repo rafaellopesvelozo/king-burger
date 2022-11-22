@@ -1,5 +1,5 @@
 .bg-img-hero {
-  padding-left: 13%;
+  padding-left: 10%;
   background-image: url(../../assets/banner-hero.png);
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -11,7 +11,7 @@
 }
 
 .info-king-burguer p:nth-child(1) {
-  font-size: clamp(1.1rem, 1.52vw, 1.375rem);
+  font-size: clamp(1.125rem, 1.52vw, 1.375rem);
   font-weight: 700;
   font-family: "Lato", sans-serif;
   color: #1d0605e5;
@@ -20,7 +20,7 @@
 .Main .bg-img-hero .info-king-burguer h1 {
   font-weight: 400;
   font-family: "Lilita One", cursive;
-  font-size: clamp(2.4rem, 5.34vw, 3.313rem);
+  font-size: clamp(3.313rem, 5.34vw, 3.313rem);
   color: #3b200b;
 }
 
@@ -31,7 +31,7 @@
 .info-king-burguer p:nth-child(3) {
   font-family: "Lato", sans-serif;
   font-style: normal;
-  font-size: clamp(0.95rem, 1.52vw, 1.375rem);
+  font-size: clamp(1rem, 1.52vw, 1.375rem);
   color: rgba(29, 6, 5, 0.69);
 }
 
@@ -54,10 +54,14 @@
   color: #ffff;
   font-family: "Lato", sans-serif;
   font-weight: 700;
+  transition: all 0.1s ease-in-out;
+}
+.Main .bg-img-hero .btn-king-gurguer button:hover {
+  background-color: #8b0902;
 }
 
 .Main .personalized-service {
-  padding: 0 0 0 10%;
+  padding: 0 10%;
   background-color: #faf3f2;
 }
 
@@ -73,7 +77,7 @@
 }
 
 .Main .personalized-service .service .information p:nth-child(1) {
-  font-size: clamp(1.1rem, 2.77vw, 2.5rem);
+  font-size: clamp(1.563rem, 2.84vw, 2.563rem);
   font-weight: 400;
   color: #1d0605;
   font-family: "Lilita One", cursive;
@@ -86,7 +90,7 @@
 }
 
 .Main .personalized-service .service .information p:nth-child(2) {
-  font-size: clamp(0.9rem, 1.38vw, 1.25rem);
+  font-size: clamp(1rem, 1.38vw, 1.25rem);
   font-weight: 400;
   color: rgba(29, 6, 5, 0.69);
   font-family: "Lato", sans-serif;
@@ -94,7 +98,7 @@
 }
 
 .Main .personalized-service .service .information .btn-menu button {
-  font-size: clamp(0.9rem, 1.59vw, 1.438rem);
+  font-size: clamp(1rem, 1.59vw, 1.438rem);
   font-weight: 700;
   background-color: #f43427;
   font-family: "Lato", sans-serif;
@@ -106,8 +110,10 @@
   cursor: pointer;
   margin-top: 10px;
 }
-
-.personalized-service #row hr {
+.Main .personalized-service .service .information .btn-menu button:hover {
+  background-color: #8b0902;
+}
+.personalized-service #row {
   width: 80%;
   border: 1px solid rgba(29, 6, 5, 0.15);
   margin: 100px 0;
@@ -134,7 +140,7 @@
 }
 
 .Main .publications-social-media .title-publication p:nth-child(1) {
-  font-size: clamp(1.4rem, 2.22vw, 2rem);
+  font-size: clamp(1.563rem, 2.43vw, 2.18rem);
   font-weight: 400;
   color: #1d0605e5;
   font-family: "Lilita One", cursive;
@@ -165,7 +171,7 @@
 }
 
 .Main .our-deliveries {
-  padding: 0 0 0 10%;
+  padding: 0 10%;
   background-color: #faf3f2;
 }
 
@@ -181,12 +187,12 @@
   padding: 70px 10% 20px 10%;
 }
 .Main .localization .localization-title p:nth-child(1) {
-  font-size: clamp(1.3rem, 2.22vw, 2rem);
+  font-size: clamp(1.563rem, 2.22vw, 2rem);
   color: #1d0605;
   font-family: "Lilita One", cursive;
 }
 .Main .localization .localization-title p:nth-child(2) {
-  font-size: clamp(0.8rem, 1.11vw, 1rem);
+  font-size: 1rem;
   color: #1d0605b0;
   font-family: "Lato", sans-serif;
 }
@@ -199,36 +205,37 @@
   border: none;
 }
 
-@media (max-width: 1231px) {
-  .Main .our-deliveries {
-    padding: 0 5% 0 10%;
-    background-color: #faf3f2;
-  }
-}
-
-@media (max-width: 1176px) {
-  .Main .our-deliveries {
-    padding: 0 5% 0 6%;
-  }
-  .Main .personalized-service {
-    padding: 0 5% 0 6%;
-  }
-  .Main .personalized-service .service .woman-eat img {
-    width: 450px;
-  }
+@media (max-width: 428px) {
   .bg-img-hero {
-    padding-left: 6%;
+    background-image: url(../../assets/banner-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 855px;
   }
-}
-
-@media (max-width: 906px) {
-  .Main .personalized-service .service .woman-eat img {
-    width: 370px;
+  .Main section .bg-img-hero .info-king-burguer {
+    margin-top: 25%;
   }
-}
-
-@media (max-width: 740px) {
+  .Main section .bg-img-hero {
+    display: flex;
+    justify-content: start;
+    padding: 0 6%;
+  }
+  .Main .personalized-service .service {
+    display: flex;
+    flex-direction: column;
+  }
   .Main .personalized-service .service .woman-eat img {
-    width: 300px;
+    width: 100%;
+  }
+  .personalized-service #row hr {
+    width: 100%;
+    margin: 50px 0;
+  }
+  .Main .publications-social-media .title-publication {
+    padding: 0 30px;
+  }
+  .Main #scrollocalization{
+    scroll-margin-top: 50px;
   }
 }

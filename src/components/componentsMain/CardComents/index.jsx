@@ -15,14 +15,27 @@ const CardsComents = () => {
         // eslint-disable-next-line
     }, [])
 
+
     const handLeftClick = (e) => {
         e.preventDefault();
-        carousel.current.scrollLeft -= carousel.current.offsetWidth
+        carousel.current.scrollLeft -= carousel.current.offsetWidth - 770
+        
+        if(carousel.current.scrollLeft === 0){
+         carousel.current.scrollLeft = 2927
+        }
+
+        if(carousel.current.scrollLeft === 2726){
+            carousel.current.scrollLeft -= carousel.current.offsetWidth - 850
+        }
     }
 
     const handleRightClick = (e) => {
         e.preventDefault();
-        carousel.current.scrollLeft += carousel.current.offsetWidth
+        carousel.current.scrollLeft += carousel.current.offsetWidth - 770
+        
+        if(carousel.current.scrollLeft === 2450 || carousel.current.scrollLeft === 2726){
+            carousel.current.scrollLeft = 0
+        }
     }
 
     return (

@@ -3,8 +3,8 @@ import './styles.css'
 
 const Offers = () => {
     return (
-        <div id="scrollPromotion" className='Offers'>
-            <div className="title-offers">
+        <div  className='Offers'>
+            <div id="scrollPromotion"  className="title-offers">
                 <p ><strong>OFERTAS ESPECIAIS</strong></p>
                 <p>Aproveite todas as nossas ofertas, fiquem de olhos abertos, porque estamos mudando nosso cardáipio.</p>
             </div>

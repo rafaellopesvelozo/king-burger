@@ -16,7 +16,7 @@ const CardDelivery = () => {
                 </div>
                 <div className='deliveries'>
                     <div className="title">
-                        <p>nossas entregas</p>
+                        <p>NOSSAS ENTREGAS</p>
                     </div>
                     <div className='deliveries-cards'>
                         <div className='card'>
@@ -66,7 +66,7 @@ const CardDelivery = () => {
                     </div>
                     <div className='title-request'>
                         <p>FAÇA O SEU PEDIDO AGORA  MESMO!</p>
-                        <p>venha saborear a melhor experiência de hangurguense artesanal <br />
+                        <p>venha saborear a melhor experiência de hanburguense artesanal <br />
                             de <span>Empires Burger.</span> com temática medieval!</p>
                     </div>
                 </div>
@@ -74,9 +74,7 @@ const CardDelivery = () => {
                     <button>SOLICITAR PEDIDO</button>
                 </div>
             </div>
-
         </>
-
     );
 }
 

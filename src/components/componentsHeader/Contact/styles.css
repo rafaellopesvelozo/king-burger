@@ -3,11 +3,9 @@
   align-items: center;
   gap: 1rem;
 }
-
 .Contact img {
   cursor: pointer;
 }
-
 .contactWhatsapp {
   margin-left: 0.4rem;
   gap: 1rem;
@@ -17,21 +15,23 @@
   background-color: #f59a1b;
   padding: 0.3rem 1rem;
   border-radius: 0.2rem;
+  transition: all .2s ease-in-out;
   cursor: pointer;
 }
-
+.contactWhatsapp:hover {
+  background-color: #da8919;
+}
 .contactWhatsapp p {
   color: #34201f;
   font-size: 16px;
   width: 60px;
 }
-
 .contactWhatsapp img {
   width: 21px;
   height: 21px;
 }
 
-@media(max-width: 940px){
+@media(max-width: 1110px){
   .Contact {
     display: none;
   }

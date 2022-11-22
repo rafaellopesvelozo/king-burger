@@ -37,13 +37,12 @@ const Main = () => {
                     <div className='information'>
                         <p>ATENDIMENTO <br /> <span>PERSONALIZADO</span></p>
                         <p>todos os nossos clientes são tratados como rei e <br /> rainha, com a nossa culinária artesanal.</p>
-
                         <div className='btn-menu'>
                             <button>Cardápio Imperial</button>
                         </div>
                     </div>
                 </div>
-                <div id="row"><hr /></div>
+                <div id="row"></div>
 
                 <div><CardsComents /></div>
             </div>

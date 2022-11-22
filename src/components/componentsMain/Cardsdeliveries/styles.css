@@ -3,10 +3,10 @@
   display: flex;
   align-items: center;
   gap: 30px;
+  justify-content: space-between;
 }
-
 .Main .our-deliveries .service-deliveries .deliveries .title p {
-  font-size: clamp(1.4rem, 2.22vw, 2rem);
+  font-size: clamp(1.563rem, 2.22vw, 2rem);
   color: #1d0605e5;
   font-weight: 400;
   font-family: "Lilita One", cursive;
@@ -36,7 +36,6 @@
   box-shadow: 0 4px 40px 0 #b29b84;
   scale: 1.01;
 }
-
 .Main
   .our-deliveries
   .service-deliveries
@@ -71,7 +70,7 @@
   .card
   .card-info
   p:nth-child(1) {
-  font-size: clamp(1rem, 2.38vw, 1, 25rem);
+  font-size: clamp(1.125rem, 1.38vw, 1, 25rem);
   font-weight: 400;
   color: #1d0605e5;
   font-family: "Lilita One", cursive;
@@ -84,53 +83,47 @@
   .card
   .card-info
   p:nth-child(2) {
-  font-size: clamp(0.8rem, 1.11vw, 1rem);
+  font-size: clamp(0.875rem, 1.11vw, 1rem);
   font-weight: 400;
   color: #1d0605b0;
   font-family: "Lato", sans-serif;
   padding-top: 5px;
 }
-
 .btn-delivery {
   margin-top: 90px;
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  width: 94%;
+  width: 100%;
   height: 120px;
   background-color: #f43127;
   border-radius: 10px;
 }
-
 .btn-delivery div {
   display: flex;
   flex-direction: row;
 }
-
 .btn-delivery div .title-request {
   display: flex;
   flex-direction: column;
   padding-left: 40px;
 }
-
 .btn-delivery div .title-request p:nth-child(1) {
   color: #1d0605b0;
-  font-size: clamp(1.2rem, 1.74vw, 1.563rem);
+  font-size: clamp(1.125rem, 1.74vw, 1.563rem);
   font-weight: 400;
   font-family: "Lilita One", cursive;
 }
-
 .btn-delivery div .title-request p:nth-child(2) {
   color: #ffffff;
-  font-size: clamp(0.8rem, 1.12vw, 1rem);
+  font-size: clamp(0.875rem, 1.11vw, 1rem);
   font-weight: 400;
   font-family: "Lato", sans-serif;
 }
-
 .btn-delivery .btn-request button {
   background-color: #fae4d0;
   padding: 8px 16px;
-  font-size: clamp(0.8rem, 1.25vw, 1.125rem);
+  font-size: clamp(1rem, 1.25vw, 1.125rem);
   font-family: "Lato", sans-serif;
   font-weight: 900;
   color: #f43127;
@@ -138,6 +131,11 @@
   outline: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+.btn-delivery .btn-request button:hover {
+  background-color: #faddc2;
+
 }
 .service-deliveries
   .deliveries
@@ -149,21 +147,40 @@
     hue-rotate(356deg) brightness(96%) contrast(93%);
 }
 
-@media (max-width: 1176px) {
-  .service-deliveries img {
-    width: 450px;
+@media (max-width: 428px) {
+  .Main .our-deliveries .service-deliveries {
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-}
-@media (max-width: 906px) {
-  .service-deliveries img {
-    width: 370px;
+  .btn-delivery {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
   }
-}
-@media (max-width: 740px) {
   .service-deliveries .woman-eat img {
-    width: 300px;
+    width: 100%;
   }
-  .Main .our-deliveries .service-deliveries .deliveries .deliveries-cards .card {
-    padding: 10px;
+  .btn-delivery div .title-request {
+    padding-left: 0;
+  }
+  .btn-delivery div {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-delivery div .logo-request {
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+  .btn-delivery div .logo-request img {
+    width: 32px;
+  }
+  .btn-delivery .btn-request {
+    width: 100%;
   }
 }

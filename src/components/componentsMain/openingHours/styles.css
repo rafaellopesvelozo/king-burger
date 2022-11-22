@@ -4,7 +4,6 @@
   margin-top: 60px;
   gap: 25px;
 }
-
 .open-hours-for-client .open-hours-time {
   width: 46%;
   display: flex;
@@ -14,23 +13,21 @@
   padding: 25px 10px;
   border-radius: 10px;
 }
-
 .open-hours-for-client .open-hours-time .logo-time img {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 45px;
 }
-
 .open-hours-for-client .open-hours-time .open-hours section p:nth-child(1) {
-  font-size: clamp(0.1rem, 1.73vw, 1.563rem);
+  font-size: clamp(1.125rem, 1.73vw, 1.563rem);
   color: rgba(29, 6, 5, 0.69);
   font-weight: 400;
   font-family: "Lilita One", cursive;
 }
 
 .open-hours-for-client .open-hours-time .open-hours section p:nth-child(2) {
-  font-size: clamp(0.8rem, 1.11vw, 1rem);
+  font-size: clamp(0.875rem, 1.11vw, 1rem);
   font-weight: 700;
   color: #ffffff;
   font-family: "Lato", sans-serif;
@@ -46,41 +43,43 @@
 }
 
 .open-hours-for-client #empire section p:nth-child(1) {
-  font-size: clamp(0.9rem, 1.25vw, 1.125rem);
+  font-size: 1.125rem;
   font-weight: 400;
   font-family: "Lato", sans-serif;
   color: rgba(29, 6, 5, 0.69);
 }
-
 .open-hours-for-client #empire section p:nth-child(2) {
-  font-size: clamp(1.1rem, 1.94vw, 1.75rem);
+  font-size: 1.75rem;
   font-weight: 400;
   font-family: "Lilita One", cursive;
   color: #f43127;
 }
-
 .Open {
   background-color: #5db110;
 }
-.Closed{
+.Closed {
   background-color: #fa3127;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 428px) {
+  .open-hours-for-client .open-hours-time {
+    width: 100%;
+  }
+  .open-hours-for-client #empire section p:nth-child(1) {
+    padding-top: 50px;
+    font-size: 1rem;
+  }
+  .open-hours-for-client #empire section p:nth-child(2) {
+    font-size: 2.4rem;
+  }
   .open-hours-for-client {
     display: flex;
     flex-direction: column;
   }
-  .open-hours-for-client #empire {
-    padding-top: 20px;
+  .open-hours-for-client .open-hours-time {
+    gap: 10px;
   }
-  .open-hours-for-client #empire section {
+  .open-hours-for-client #empire section p {
     text-align: center;
-  }
-  .open-hours-for-client #empire section p:nth-child(1) {
-    font-size: 18px;
-  }
-  .open-hours-for-client #empire section p:nth-child(2) {
-    font-size: 28px;
   }
 }

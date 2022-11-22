@@ -2,22 +2,19 @@
   display: flex;
   gap: 0.6rem;
 }
-
 .links ul li {
   cursor: pointer;
   font-size: 18px;
   color: #635352;
 }
-
 .links ul li:hover {
   color: #32201f;
 }
-
 .links ul li a {
   color: inherit;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1110px) {
   .links ul {
     display: none;
   }

@@ -1,44 +1,39 @@
 .main-cards {
-  position: relative;
   scroll-margin-top: 150px;
 }
 .main-cards .cards-carroussel {
   display: flex;
   overflow: hidden;
-  scroll-behavior: smooth;
   border-radius: 10px;
-  width: 92%;
-  padding: 25px 0;
+  scroll-behavior: smooth;
+  margin: 25px 0;
   gap: 15px;
 }
-
 .main-cards .cards-coments p:nth-child(1) {
-  font-size: clamp( .9rem,2.22vw,2rem);
+  font-size: clamp(1.563rem, 2.22vw, 2rem);
   color: #1d0605;
   font-weight: 400;
   font-family: "Lilita One", cursive;
 }
 
 .main-cards .cards-coments p:nth-child(2) {
-  font-size: clamp( .8rem,1.20vw,1.5rem);
+  font-size: 1rem;
   color: rgba(29, 6, 5, 0.9);
   font-weight: 400;
   font-family: "Lato", sans-serif;
 }
-
 .main-cards .cards-carroussel .cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
-  background-color: rgba(60, 35, 13, 0.1);
+  background-color: #FFFFFF;
   padding: 18px;
-  width: 385px;
+  width: 336px;
   height: 170px;
 }
-
 .main-cards .cards-carroussel .cards .coments p {
-  font-size: clamp( .8rem,1.12vw,1.5rem);
+  font-size: 1rem;
   font-weight: 400;
   font-family: "Lato", sans-serif;
   color: #1d060560;
@@ -49,35 +44,30 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
 .main-cards .cards-carroussel .cards .perfil,
 .main-cards .cards-carroussel .cards .perfil .name-age {
   display: flex;
   margin-top: 6px;
 }
-
 .main-cards .cards-carroussel .cards .perfil .name-age {
   display: flex;
   flex-direction: column;
 }
-
 .main-cards .cards-carroussel .cards .perfil .name-age p:nth-child(1) {
-  font-size: clamp( .9rem,1.30vw,1.125rem);
+  font-size: 1.125rem;
   font-weight: 400;
   color: #1d060590;
   font-family: "Lilita One", cursive;
   margin-right: 5px;
 }
-
 .main-cards .cards-carroussel .cards .perfil .name-age p:nth-child(2) {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   color: #1d060560;
   font-family: "Lato", sans-serif;
   display: flex;
   padding-top: 5px;
 }
-
 .main-cards .cards-carroussel .cards .perfil .avatar img {
   width: 50px;
   height: 50px;
@@ -97,7 +87,6 @@
   background-color: #ffad0d;
   cursor: pointer;
 }
-
 .swiper-button-next:hover,
 .swiper-button-prev:hover,
 .swiper-pagination-bullet:hover {
@@ -106,11 +95,16 @@
   filter: brightness(0) saturate(100%) invert(6%) sepia(6%) saturate(7388%)
     hue-rotate(321deg) brightness(96%) contrast(103%);
 }
-
 .swiper-button-next,
 .swiper-button-prev,
 .swiper-pagination-bullet {
   font-weight: 600;
   filter: brightness(0) saturate(100%) invert(16%) sepia(27%) saturate(702%)
     hue-rotate(318deg) brightness(89%) contrast(62%);
+}
+
+@media (max-width: 428px) {
+  .main-cards {
+    scroll-margin-top: 160px;
+  }
 }
