@@ -88,7 +88,9 @@
   color: #f59a1b;
   font-family: "Lilita One", cursive;
 }
-
+.active{
+  background-color: white;
+}
 @media (max-width: 428px) {
   .menu-empire {
     display: flex;

@@ -15,6 +15,7 @@ const MenuEmpire = () => {
         // eslint-disable-next-line
     }, [])
 
+
     return (
         <div id="scrollmenu" className="menu-empire">
             <div className="bg-empire">
