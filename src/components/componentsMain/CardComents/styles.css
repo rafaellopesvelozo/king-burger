@@ -9,6 +9,7 @@
   margin: 25px 0;
   gap: 15px;
 }
+
 .main-cards .cards-coments p:nth-child(1) {
   font-size: clamp(1.563rem, 2.22vw, 2rem);
   color: #1d0605;

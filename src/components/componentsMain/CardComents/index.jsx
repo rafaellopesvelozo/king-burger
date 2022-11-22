@@ -7,7 +7,7 @@ import './styles.css';
 const CardsComents = () => {
     const [listComent, setListComent] = useState([])
     const carousel = useRef()
-
+    
     useEffect(() => {
         api.get('api/empire-burger/testimonials').then(({ data }) => {
             setListComent(data)
@@ -31,6 +31,14 @@ const CardsComents = () => {
         }
     }
 
+    const handleMidleClick = (e) => {
+        e.preventDefault();
+        carousel.current.scrollLeft = 1747
+        if (carousel.current.scrollLeft === 2410) {
+            carousel.current.scrollLeft = 1405
+        }
+    }
+
     const handleRightClick = (e) => {
         e.preventDefault();
         carousel.current.scrollLeft += carousel.current.offsetWidth - 685
@@ -42,8 +50,7 @@ const CardsComents = () => {
             carousel.current.scrollLeft -= carousel.current.offsetWidth - 692
         }
     }
-
-
+ 
     return (
         <div id="scrollComent" className='main-cards'>
             <div className='cards-coments'>
@@ -79,6 +86,7 @@ const CardsComents = () => {
             </div>
             <div className='next-prev'>
                 <span onClick={handLeftClick}></span>
+                <span onClick={handleMidleClick}></span>
                 <span onClick={handleRightClick}></span>
             </div>
         </div>

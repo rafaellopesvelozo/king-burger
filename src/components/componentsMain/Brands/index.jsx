@@ -5,8 +5,9 @@ import Headset from '../../../assets/icons/headset.svg'
 import './styles.css'
 
 const Brand = () => {
+   
     return (
-        <div className='brands'>
+        <div className='brands' id="toggleMenu">
             <section>
                 <div className='artisanal'>
                     <div className='brands-logo'>
