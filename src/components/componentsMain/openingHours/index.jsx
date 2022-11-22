@@ -1,57 +1,42 @@
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 
 import Timer from "../../../assets/icons/timer.svg"
 
 import "./styles.css"
 
 const OpenHours = () => {
-    const [Open, setOpen] = useState(true);
-    const Ref = useRef()
-
+    const [open, setOpen] = useState(false);
 
     useEffect(() => {
-        function OpenHours() {
-            const date = new Date();
-            const hours = date.getHours();
-            const day = date.getDay();
+        const date = new Date();
+        const hours = date.getHours();
+        const day = date.getDay();
 
-
-            if (day !== 0 && hours >= 17) {
-                setOpen(Open);
-                Ref.current.style.background = '#5DB110';
-            }
-            if (day !== 0 && hours >= 23) {
-                setOpen(!Open);
-                Ref.current.style.background = '#fa3127';
-            }
-
-
-
-            if (day === 7 && hours >= 18.30) {
-                setOpen(Open);
-                Ref.current.style.background = '#5DB110';
-            }
-            if (day === 7 && hours >= 23) {
-                setOpen(!Open);
-                Ref.current.style.background = '#fa3127';
-            }
-
-            if (day === 0 && hours >= 18.30) {
-                setOpen(Open);
-                Ref.current.style.background = '#5DB110';
-            }
-            if (day === 0 && hours >= 23) {
-                setOpen(!Open);
-                Ref.current.style.background = '#fa3127';
-            }
+        if (day !== 0 && hours >= 17) {
+            setOpen(true);
         }
-        return OpenHours()
-    }, [Open])
+        if (day !== 0 && hours >= 23) {
+            setOpen(false);
+        }
+
+        if (day === 7 && hours >= 18.30) {
+            setOpen(open);
+        }
+        if (day === 7 && hours >= 23) {
+            setOpen(!open);
+        }
+        if (day === 0 && hours >= 18.30) {
+            setOpen(open);
+        }
+        if (day === 0 && hours >= 23) {
+            setOpen(!open);
+        }
+    }, [])
 
 
     return (
         <div className="open-hours-for-client">
-            <div className="open-hours-time" ref={Ref} onLoad={() => Open ? Ref : Ref} >
+            <div className={`open-hours-time  ${open ? "Open" : "Closed"} `}  >
                 <div className="logo-time">
                     <img src={Timer} alt={Timer} />
                 </div>

@@ -1,26 +1,23 @@
 import { useEffect, useRef, useState } from 'react';
 
-import { ApiComent } from '../../../services/api.cardscoments';
+import { api } from '../../../services/api';
 
 import './styles.css';
-
 
 const CardsComents = () => {
     const [listComent, setListComent] = useState([])
     const carousel = useRef()
 
     useEffect(() => {
-        ApiComent.get('api/empire-burger/testimonials').then(({ data }) => {
+        api.get('api/empire-burger/testimonials').then(({ data }) => {
             setListComent(data)
         })
         // eslint-disable-next-line
     }, [])
 
-
     const handLeftClick = (e) => {
         e.preventDefault();
         carousel.current.scrollLeft -= carousel.current.offsetWidth
-
     }
 
     const handleRightClick = (e) => {
@@ -44,7 +41,6 @@ const CardsComents = () => {
                 }
                 {
                     listComent.map(coments => (
-
                         < div className='cards' key={coments.name}>
                             <div className='coments'>
                                 <p>{coments.testimonial}</p>
@@ -58,7 +54,6 @@ const CardsComents = () => {
                                     <p>{coments.age} Anos</p>
                                 </div>
                             </div>
-
                         </div>
                     ))
                 }

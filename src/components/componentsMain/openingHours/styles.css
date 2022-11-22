@@ -11,7 +11,6 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-  background-color: #fa3127;
   padding: 25px 10px;
   border-radius: 10px;
 }
@@ -63,9 +62,10 @@
 .Open {
   background-color: #5db110;
 }
-.Closed {
+.Closed{
   background-color: #fa3127;
 }
+
 @media (max-width: 940px) {
   .open-hours-for-client {
     display: flex;

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { ApiMenu } from '../../../services/api.menuempire';
-import { formatCurrency } from '../../../utils/formatCurrency';
+import { api } from '../../../services/api';
+import { formatCurrency } from '../../../utils/format';
 
 import './styles.css'
 
@@ -9,11 +9,9 @@ const MenuEmpire = () => {
     const [listMenu, setListMenu] = useState([])
 
     useEffect(() => {
-        ApiMenu.get('api/empire-burger/menu').then(({ data }) => {
+        api.get('api/empire-burger/menu').then(({ data }) => {
             setListMenu(data)
         })
-        console.log(listMenu)
-
         // eslint-disable-next-line
     }, [])
 
