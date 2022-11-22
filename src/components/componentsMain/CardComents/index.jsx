@@ -15,28 +15,34 @@ const CardsComents = () => {
         // eslint-disable-next-line
     }, [])
 
-
     const handLeftClick = (e) => {
         e.preventDefault();
-        carousel.current.scrollLeft -= carousel.current.offsetWidth - 770
-        
-        if(carousel.current.scrollLeft === 0){
-         carousel.current.scrollLeft = 2927
+        carousel.current.scrollLeft -= carousel.current.offsetWidth - 685
+        if (carousel.current.scrollLeft === 0) {
+            carousel.current.scrollLeft = 2927
         }
 
-        if(carousel.current.scrollLeft === 2726){
+        if (carousel.current.scrollLeft === 2726) {
             carousel.current.scrollLeft -= carousel.current.offsetWidth - 850
+        }
+
+        if (carousel.current.offsetWidth === 342) {
+            carousel.current.scrollLeft -= carousel.current.offsetWidth + 10
         }
     }
 
     const handleRightClick = (e) => {
         e.preventDefault();
-        carousel.current.scrollLeft += carousel.current.offsetWidth - 770
-        
-        if(carousel.current.scrollLeft === 2450 || carousel.current.scrollLeft === 2726){
+        carousel.current.scrollLeft += carousel.current.offsetWidth - 685
+        if (carousel.current.scrollLeft === 2810) {
             carousel.current.scrollLeft = 0
         }
+
+        if (carousel.current.offsetWidth === 342) {
+            carousel.current.scrollLeft -= carousel.current.offsetWidth - 692
+        }
     }
+
 
     return (
         <div id="scrollComent" className='main-cards'>
