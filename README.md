@@ -1,10 +1,7 @@
 <h1 align="center">
-  <img src=".github/logo.png" width="300px" />
+  <img src="https://user-images.githubusercontent.com/101975205/203318306-6c7a4871-a964-4b16-bf2c-1af981708744.jpeg" width="900px" />
 </h1>
 
-<p align="center">
-  <img src=".github/preview.jpeg" width="100%" />
-</p>
 
 ## 💻 Projeto
 
