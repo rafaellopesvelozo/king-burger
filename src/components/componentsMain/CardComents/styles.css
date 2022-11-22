@@ -76,7 +76,7 @@
 }
 .main-cards .next-prev {
   display: flex;
-  width: 90%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   gap: 5px;
