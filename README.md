@@ -2,6 +2,11 @@
   <img src="https://user-images.githubusercontent.com/101975205/203318306-6c7a4871-a964-4b16-bf2c-1af981708744.jpeg" width="900px" />
 </h1>
 
+<p align="center">
+  Deploy do projeto: https://king-burger-xi.vercel.app
+  <br/>
+</p>
+
 
 ## 💻 Projeto
 
