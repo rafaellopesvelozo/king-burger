@@ -58,6 +58,10 @@ const Main = () => {
                     <img src={BurguerPublications} alt={BurguerPublications} />
                     <img src={BurguerPublications} alt={BurguerPublications} />
                     <img src={BurguerPublications} alt={BurguerPublications} />
+                    <img src={BurguerPublications} alt={BurguerPublications} />
+                    <img src={BurguerPublications} alt={BurguerPublications} />
+                    <img src={BurguerPublications} alt={BurguerPublications} />
+                    <img src={BurguerPublications} alt={BurguerPublications} />
                 </div>
                 <div className='empireBurger'>
                     <p>#EMPIREBURGER .#EMPIREBURGER .#EMPIREBURGER .#EMPIREBURGER .#EMPIREBURGER . #EMPIREBURGER . #EMPIREBURGER . #EMPIREBURGER . #EMPIREBURGER . </p>

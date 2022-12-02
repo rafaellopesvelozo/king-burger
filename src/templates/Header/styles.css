@@ -27,7 +27,9 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  max-width: 1920px;
 }
+
 .Header .nav .Logo img {
   width: 215px;
   height: 33px;

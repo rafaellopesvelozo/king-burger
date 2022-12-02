@@ -125,8 +125,10 @@
 }
 
 .Main .publications-social-media .publications-images {
+  overflow: hidden;
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .Main .publications-social-media .publications-images img {
