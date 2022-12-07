@@ -18,9 +18,9 @@ const Header = () => {
 
     return (
 
-        <div className='Header'>
+        <header className='Header'>
             <Mobile open={isModalVisible ? true : false} />
-            <div className='nav'>
+            <nav className='nav'>
                 <div className="Logo">
                     <img src={Logo} alt={Logo} />
                 </div>
@@ -31,8 +31,8 @@ const Header = () => {
                     <Contact />
                 </div>
                 <FcMenu className="icon-menu" size={35} onClick={handleOpenModal} />
-            </div>
-        </div>
+            </nav>
+        </header>
 
 
 

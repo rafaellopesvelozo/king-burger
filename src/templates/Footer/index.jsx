@@ -6,7 +6,7 @@ import './styles.css'
 
 const Footer = () => {
     return (
-        <div className='Footer' id='scrollContact' >
+        <footer className='Footer' id='scrollContact' >
             <div>
                 <div className="Logo-footer">
                     <img src={LogoFooter} alt={LogoFooter} />
@@ -33,7 +33,7 @@ const Footer = () => {
                 <div id="rowFooterCopiright"></div>
                 <p><span>2022 © EmpireBurger.</span> Todos os direitos reservados.</p>
             </div>
-        </div>
+        </footer>
     );
 }
 export default Footer;

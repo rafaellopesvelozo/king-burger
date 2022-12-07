@@ -17,7 +17,7 @@ const MenuEmpire = () => {
 
 
     return (
-        <div id="scrollmenu" className="menu-empire">
+        <section id="scrollmenu" className="menu-empire">
             <div className="bg-empire">
                 <p>
                     ESCOLHA SEU COMBO <br /> IMPERIAL,<span>PEÇA AGORA!</span>
@@ -66,7 +66,7 @@ const MenuEmpire = () => {
                 </div>
 
             </div>
-        </div>
+        </section>
     );
 }
 export default MenuEmpire;

@@ -10,7 +10,7 @@ import './styles.css'
 const CardDelivery = () => {
     return (
         <>
-            <div className='service-deliveries'>
+            <section className='service-deliveries'>
                 <div className='woman-eat'>
                     <img src={CardPhone} alt={CardPhone} />
                 </div>
@@ -57,9 +57,9 @@ const CardDelivery = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="btn-delivery">
+            <section className="btn-delivery">
                 <div>
                     <div className='logo-request'>
                         <img src={Phone} alt={Phone} />
@@ -73,7 +73,7 @@ const CardDelivery = () => {
                 <div className="btn-request">
                     <button>SOLICITAR PEDIDO</button>
                 </div>
-            </div>
+            </section>
         </>
     );
 }

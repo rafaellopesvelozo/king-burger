@@ -3,7 +3,7 @@ import './styles.css'
 
 const Offers = () => {
     return (
-        <div  className='Offers'>
+        <section  className='Offers'>
             <div id="scrollPromotion"  className="title-offers">
                 <p ><strong>OFERTAS ESPECIAIS</strong></p>
                 <p>Aproveite todas as nossas ofertas, fiquem de olhos abertos, porque estamos mudando nosso cardáipio.</p>
@@ -32,7 +32,7 @@ const Offers = () => {
             <div>
                 <OpenHours />
             </div>
-        </div>
+        </section>
     );
 }
 

@@ -52,7 +52,7 @@ const CardsComents = () => {
     }
  
     return (
-        <div id="scrollComent" className='main-cards'>
+        <section id="scrollComent" className='main-cards'>
             <div className='cards-coments'>
                 <p>NOSSA REALEZA</p>
                 <p>A satisfação de nossos clientes em primeiro lugar</p>
@@ -89,7 +89,7 @@ const CardsComents = () => {
                 <span onClick={handleMidleClick}></span>
                 <span onClick={handleRightClick}></span>
             </div>
-        </div>
+        </section>
     );
 }
 export default CardsComents;

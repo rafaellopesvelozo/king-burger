@@ -3,7 +3,7 @@ import './styles.css'
 const NavLinks = () => {
     return (
         <div >
-            <div className="links">
+            <nav className="links">
                 <ul>
                     <li><a href="#scrollHome">Home</a></li>
                     <li><a href="#scrollPromotion">Promoção</a></li>
@@ -11,7 +11,7 @@ const NavLinks = () => {
                     <li><a href="#scrollComent">Comentário</a></li>
                     <li><a href="#scrollContact">Contato</a></li>
                 </ul>
-            </div> 
+            </nav> 
                
         </div>
     );
